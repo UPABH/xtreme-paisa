@@ -2953,8 +2953,8 @@ details-disclosure > details {
 }
 
 .gradient {
-  background: rgb(var(--color-background));
-  background: var(--gradient-background);
+  background: #312c75;
+  /* background: var(--gradient-background); */
   background-attachment: fixed;
 }
 
