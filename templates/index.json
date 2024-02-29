@@ -1,1 +1,130 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Browse our latest products","heading_size":"h0"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","button"],"settings":{"image_overlay_opacity":40,"image_height":"large","desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"featured_collection":{"type":"featured-collection","settings":{"title":"Featured products","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"all","products_to_show":8,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"enable_quick_add":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":44,"padding_bottom":36}}},"order":["image_banner","featured_collection"]}
+{
+  "sections": {
+    "xp_main_banner_Ybj9Mb": {
+      "type": "xp-main-banner",
+      "settings": {
+        "desktopimage": "shopify:\/\/shop_images\/b1-desktop.png",
+        "mobileimage": "shopify:\/\/shop_images\/b1-desktop_87c6302f-7dd1-4fec-9be1-c286d41b2a10.png",
+        "link": ""
+      }
+    },
+    "xp_main_courses_ibKCYN": {
+      "type": "xp-main-courses",
+      "blocks": {
+        "course_Gmw77b": {
+          "type": "course",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/pngwing.com.png",
+            "course_title": "SHOPIFY",
+            "course_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum has been the industry's standard dummy text ever since the 1500s, \nwhen an unknown printer.",
+            "link_course": ""
+          }
+        },
+        "course_bEcUGD": {
+          "type": "course",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/ebay.png",
+            "course_title": "EBAY",
+            "course_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum has been the industry's standard dummy text ever since the 1500s, \nwhen an unknown printer.",
+            "link_course": ""
+          }
+        },
+        "course_bmiK3p": {
+          "type": "course",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Tiktok-Shop-Color-Black-Logo-PNG.png",
+            "course_title": "TIKTIK SHOP",
+            "course_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum has been the industry's standard dummy text ever since the 1500s, \nwhen an unknown printer.",
+            "link_course": ""
+          }
+        }
+      },
+      "block_order": [
+        "course_Gmw77b",
+        "course_bEcUGD",
+        "course_bmiK3p"
+      ],
+      "settings": {
+      }
+    },
+    "xp_we_offer_J9pzdV": {
+      "type": "xp-we-offer",
+      "settings": {
+        "image_offer": "shopify:\/\/shop_images\/s.png"
+      }
+    },
+    "teams_xp_CmMJpN": {
+      "type": "teams-xp",
+      "blocks": {
+        "team_jeRLmU": {
+          "type": "team",
+          "settings": {
+          }
+        },
+        "team_krXxre": {
+          "type": "team",
+          "settings": {
+          }
+        },
+        "team_btGf6j": {
+          "type": "team",
+          "settings": {
+          }
+        },
+        "team_mhGxXD": {
+          "type": "team",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "team_jeRLmU",
+        "team_krXxre",
+        "team_btGf6j",
+        "team_mhGxXD"
+      ],
+      "settings": {
+      }
+    },
+    "xp_signup_main_nnQtCe": {
+      "type": "xp-signup-main",
+      "settings": {
+      }
+    },
+    "xp_testimonials_cNeqx3": {
+      "type": "xp-testimonials",
+      "blocks": {
+        "testimonials_AtwCpg": {
+          "type": "testimonials",
+          "settings": {
+          }
+        },
+        "testimonials_wT3x4X": {
+          "type": "testimonials",
+          "settings": {
+          }
+        },
+        "testimonials_JqDLAg": {
+          "type": "testimonials",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_AtwCpg",
+        "testimonials_wT3x4X",
+        "testimonials_JqDLAg"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "xp_main_banner_Ybj9Mb",
+    "xp_main_courses_ibKCYN",
+    "xp_we_offer_J9pzdV",
+    "teams_xp_CmMJpN",
+    "xp_signup_main_nnQtCe",
+    "xp_testimonials_cNeqx3"
+  ]
+}
