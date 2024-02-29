@@ -1,0 +1,116 @@
+<style>
+  .xp-main-courses {
+    margin: 8rem 0;
+  }
+
+  .xp-courses-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .course-option {
+    width: 100%;
+    padding: 0px 30px;
+    background: #f1f2f2;
+    display: flex;
+    align-items: center;
+    margin: 2rem 0rem;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .icon-image {
+    width: 200px;
+    height: 75px;
+    object-fit: contain;
+  }
+
+  .textarea-courses {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-descs,
+  .title-course {
+    margin: 0;
+  }
+
+  .icon-course {
+    max-width: 215px;
+    min-width: 215px;
+  }
+
+  .textarea-courses {
+    min-width: 75%;
+    max-width: 75%;
+  }
+
+  .title-course {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .link-course {
+    all: unset;
+    cursor: pointer;
+  }
+</style>
+
+<div class="xp-courses-wrapper">
+  {% for block in section.blocks %}
+    <a class="link-course" href="{{ block.settings.link_course }}">
+      <div class="course-option">
+        <div class="icon-course">
+          <img class="icon-image" src="{{ block.settings.icon | img_url: 'master' }}">
+        </div>
+        <div class="textarea-courses">
+          <p class="title-course">{{ block.settings.course_title }}</p>
+          <p class=" title-descs">{{ block.settings.course_desc }}</p>
+        </div>
+        {% render 'bounce-xp' %}
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "XP MAIN COURSES",
+  "tag": "section",
+  "class": "xp-main-courses",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "course",
+      "name": "Course",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Add Icon Image here"
+        },
+        {
+          "type": "html",
+          "id": "course_title",
+          "label": "Course Title"
+        },
+        {
+          "type": "html",
+          "id": "course_desc",
+          "label": "Course Description"
+        },
+        {
+          "type": "url",
+          "id": "link_course",
+          "label": "Course Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "XP MAIN COURSES"
+    }
+  ]
+}
+{% endschema %}

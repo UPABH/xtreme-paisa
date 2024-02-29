@@ -1,0 +1,64 @@
+<style>
+  .main-wrapper-xp {
+    width: 100%;
+  }
+
+  .main-xp-mobile {
+    display: none;
+  }
+
+  .main-xp-desktop {
+    display: block;
+  }
+
+  .main-image-xp {
+    width: 100%;
+  }
+
+  @media (max-width: 990px) {
+    .main-xp-mobile {
+      display: block;
+    }
+
+    .main-xp-desktop {
+      display: none;
+    }
+  }
+</style>
+
+<div class="main-wrapper-xp">
+  <a href="{{ section.settings.link }}">
+    <img class="main-image-xp main-xp-desktop" src="{{ section.settings.desktopimage | img_url: 'master'}}">
+    <img class="main-image-xp main-xp-mobile" src="{{ section.settings.mobileimage  | img_url: 'master' }}">
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "XP MAIN BANNER",
+  "tag": "section",
+  "class": "xp-main-banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktopimage",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobileimage",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Banner Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "XP MAIN BANNER"
+    }
+  ]
+}
+{% endschema %}
