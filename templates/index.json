@@ -47,6 +47,11 @@
       "settings": {
       }
     },
+    "xp_all_skills_V4L8Xj": {
+      "type": "xp-all-skills",
+      "settings": {
+      }
+    },
     "xp_we_offer_J9pzdV": {
       "type": "xp-we-offer",
       "settings": {
@@ -122,6 +127,7 @@
   "order": [
     "xp_main_banner_Ybj9Mb",
     "xp_main_courses_ibKCYN",
+    "xp_all_skills_V4L8Xj",
     "xp_we_offer_J9pzdV",
     "teams_xp_CmMJpN",
     "xp_signup_main_nnQtCe",

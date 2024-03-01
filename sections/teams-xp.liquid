@@ -1,4 +1,8 @@
 <style>
+  .xp-team-main {
+    margin-bottom: 100px;
+  }
+
   .team-wrapper {
     width: 95%;
     margin: 0 auto;
@@ -47,6 +51,36 @@
 
   .bottom-member {
     width: 100%;
+    display: none;
+  }
+
+  @media (max-width: 990px) {
+    .xp-team-main {
+      margin-bottom: 50px;
+    }
+
+    .row-wrapper-team {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .team-card {
+      width: 100%;
+      background: #fff;
+      border-radius: 10px;
+      margin: 2rem 0;
+      padding: 10px;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .team-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 </style>
 

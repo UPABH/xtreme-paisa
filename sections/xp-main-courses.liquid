@@ -1,6 +1,6 @@
 <style>
   .xp-main-courses {
-    margin: 8rem 0;
+    margin: 100px 0;
   }
 
   .xp-courses-wrapper {
@@ -54,9 +54,36 @@
     all: unset;
     cursor: pointer;
   }
+
+  @media (max-width: 990px) {
+    .xp-main-courses {
+      margin: 30px 0;
+    }
+
+    .course-option {
+      flex-direction: column;
+    }
+
+    .xp-courses-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .course-option {
+      width: 95%;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .textarea-courses {
+      min-width: 95%;
+      max-width: 95%;
+    }
+  }
 </style>
 
 <div class="xp-courses-wrapper">
+  <h1 class="main-heading-xp">Course Details</h1>
   {% for block in section.blocks %}
     <a class="link-course" href="{{ block.settings.link_course }}">
       <div class="course-option">

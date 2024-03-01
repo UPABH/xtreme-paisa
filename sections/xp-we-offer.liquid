@@ -2,6 +2,7 @@
   .xp-weoffer-wrapper {
     width: 95%;
     margin: 0 auto;
+    margin-bottom: 100px;
   }
 
   .weoffer-flexbox {
@@ -112,6 +113,120 @@
     color: #fff;
     text-align: center;
   }
+
+  .info-text--offer {
+    color: #fff;
+  }
+
+  .pricingDiv {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .price1--offer {
+    padding: 10px 10px;
+    background: #efaf1e;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .price2--offer {
+    padding: 10px 10px;
+    background: #fe5700;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 990px) {
+    .weoffer-flexbox {
+      flex-direction: column-reverse;
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .divider-xp {
+      width: 100%;
+    }
+
+    .loader p {
+      margin: 0;
+      margin: 0;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .word {
+      display: block;
+      height: 100%;
+      padding-left: 10px;
+      color: #efaf1e;
+      animation: spin_4991 4s infinite;
+      font-size: 18px;
+    }
+
+    .info-text--offer {
+      color: #fff;
+      font-size: 12px;
+      margin-top: 0;
+    }
+
+    .divider-image {
+      width: 100%;
+    }
+
+    .loader {
+      color: rgb(124, 124, 124);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 35px;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      height: 25px;
+      padding: 10px 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border-radius: 8px;
+      padding-left: 0;
+    }
+
+    .pricingDiv {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      flex-direction: column;
+    }
+
+    .price1--offer {
+      padding: 10px 20px;
+      background: #efaf1e;
+      margin-right: 0px;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    .price2--offer {
+      padding: 10px 20px;
+      background: #fe5700;
+      margin-right: 0px;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 5px;
+      width: 100%;
+    }
+  }
 </style>
 
 <div class="xp-weoffer-wrapper">
@@ -121,14 +236,24 @@
       <div class="card-we-offer ">
         <div class="card">
           <div class="loader">
-            <p>XP OFFERS YOU TO</p>
+            <p>Xtreme Paisa</p>
             <div class="words">
-              <span class="word">Shopify</span>
-              <span class="word">TIKTOK SHOP</span>
-              <span class="word">EBAY</span>
-              <span class="word">Dropshipping</span>
-              <span class="word">Shopify</span>
+              <span class="word">Earn</span>
+              <span class="word">Earn</span>
+              <span class="word">Repeat</span>
+              <span class="word">Earn</span>
+              <span class="word">Repeat</span>
             </div>
+          </div>
+          <p class="info-text--offer">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+          </p>
+          <div class="pricingDiv">
+            <div class="price1--offer">Online Class: PKR 30,000/-</div>
+            <div class="price2--offer">Physical Class: PKR 50,000/-</div>
           </div>
         </div>
       </div>

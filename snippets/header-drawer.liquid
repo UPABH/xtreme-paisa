@@ -4,7 +4,28 @@
   Usage:
   {% render 'header-drawer' %}
 {% endcomment %}
+<style>
+  @media (max-width: 990px) {
+    .signup-header {
+      margin-right: 0;
+    }
 
+    .header {
+      padding: 10px;
+    }
+
+    header-drawer {
+      justify-self: center;
+    }
+
+    .header__icons {
+      display: flex;
+      grid-area: icons;
+      justify-self: center;
+      padding-right: 0;
+    }
+  }
+</style>
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
