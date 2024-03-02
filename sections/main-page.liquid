@@ -6,6 +6,26 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .page-container-xp {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+
+  .main-page-title {
+    color: #fff;
+    width: fit-content;
+  }
+
+  .title-line {
+    height: 8px;
+    /* min-width:200px;
+    max-width: 200px; */
+    background: #f15b24;
+    display: block!important;
+    margin-bottom: 0;
+    border-radius: 50px
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -14,7 +34,8 @@
   }
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+<div class="page-container-xp section-{{ section.id }}-padding">
+  <p class="title-line"></p>
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
@@ -22,6 +43,17 @@
     {{ page.content }}
   </div>
 </div>
+
+<script>
+  const mainPageTitle = document.querySelector('.main-page-title');
+  if (mainPageTitle) {
+    const mainPageTitleWidth = mainPageTitle.offsetWidth + 20;
+    const titleLine = document.querySelector('.title-line');
+    if (titleLine) {
+      titleLine.style.width = mainPageTitleWidth + 'px';
+    }
+  }
+</script>
 
 {% schema %}
 {
