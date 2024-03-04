@@ -1,1 +1,335 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":28}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "xp_main_courses_CWQcqP": {
+      "type": "xp-main-courses",
+      "blocks": {
+        "course_cM9w9i": {
+          "type": "course",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/pngwing.com.png",
+            "course_title": "Shopify",
+            "course_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum has been the industry's standard dummy text ever since the 1500s, \nwhen an unknown printer.",
+            "link_course": ""
+          }
+        },
+        "course_XckwW8": {
+          "type": "course",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/ebay.png",
+            "course_title": "EBAY",
+            "course_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum has been the industry's standard dummy text ever since the 1500s, \nwhen an unknown printer.",
+            "link_course": ""
+          }
+        },
+        "course_LJMEqr": {
+          "type": "course",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Tiktok-Shop-Color-Black-Logo-PNG.png",
+            "course_title": "TIKTOK",
+            "course_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum has been the industry's standard dummy text ever since the 1500s, \nwhen an unknown printer.",
+            "link_course": ""
+          }
+        }
+      },
+      "block_order": [
+        "course_cM9w9i",
+        "course_XckwW8",
+        "course_LJMEqr"
+      ],
+      "settings": {
+      }
+    },
+    "multirow_hVyDJH": {
+      "type": "multirow",
+      "blocks": {
+        "row_UEEncm": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_MLcVH9": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_WWJMkF": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_UEEncm",
+        "row_MLcVH9",
+        "row_WWJMkF"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-5",
+        "row_color_scheme": "scheme-5",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_mAihqQ": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_6fA4jy": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_VEGPGE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_eRKDaC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption_6fA4jy",
+        "heading_VEGPGE",
+        "text_eRKDaC"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_QWb9DM": {
+      "type": "multirow",
+      "blocks": {
+        "row_Xf3Ud7": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_bMGnJX": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_dMkPTe": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_Xf3Ud7",
+        "row_bMGnJX",
+        "row_dMkPTe"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-5",
+        "row_color_scheme": "scheme-5",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_W8LEB7": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=-bctpa9LVhc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "scheme-5",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_V3hPXU": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_YHEyKF": {
+          "type": "slide",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_qgpfqX": {
+          "type": "slide",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_BBgQ3J": {
+          "type": "slide",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-5",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_YHEyKF",
+        "slide_qgpfqX",
+        "slide_BBgQ3J"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "xp_we_offer_eN9D3g": {
+      "type": "xp-we-offer",
+      "settings": {
+        "image_offer": "shopify:\/\/shop_images\/g1.webp"
+      }
+    },
+    "1709460630c6481cd4": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_YcRFBE": {
+          "type": "shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "75359",
+            "text_color": "#fff",
+            "button_background_color": "#ff7800",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#000000",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_YcRFBE"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "xp_all_skills_VRpKyn": {
+      "type": "xp-all-skills",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "xp_main_courses_CWQcqP",
+    "multirow_hVyDJH",
+    "rich_text_mAihqQ",
+    "multirow_QWb9DM",
+    "video_W8LEB7",
+    "slideshow_V3hPXU",
+    "xp_we_offer_eN9D3g",
+    "1709460630c6481cd4",
+    "xp_all_skills_VRpKyn"
+  ]
+}
