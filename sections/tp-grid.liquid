@@ -1,0 +1,321 @@
+{% comment %} <p class="text-stories-title">타파웨어의 <span>팁, 이야기, 레시피</span>에서 <span>영감</span>을 얻으세요.</p> {% endcomment %}
+<style>
+  .special-stories-wrapper {
+    width: 60%;
+    margin: 112px auto;
+  }
+
+  .special-stories-wrapper p {
+    color: #000;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .special-stories-wrapper span {
+    color: var(--tupperware-blue-sky);
+  }
+
+  .stories--grid1 {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas: '. . .';
+  }
+
+  .stories--grid2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas: '. . . .';
+    margin-top: 10px;
+  }
+
+  .stories-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 112px;
+  }
+
+  .stories-btn a {
+    all: unset;
+    background: var(--tupperware-blue-sky);
+    color: var(--tupperware-white);
+    min-width: 156px;
+    cursor: pointer;
+    padding: 12px 32px;
+    border-radius: 27px;
+    font-family: var(--tupperware-noto-sans-kr);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .stories-btn a:first-child {
+    margin-right: 25px;
+  }
+
+  @media (max-width: 990px) {
+    .special-stories-mobile-wrapper {
+      position: relative;
+      padding-bottom: 45px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .text-stories-title {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      margin: auto;
+      margin-top: 62px;
+      margin-bottom: 40px;
+      width: 176px;
+    }
+
+    .text-stories-title span {
+      color: var(--tupperware-blue-sky);
+    }
+
+    .stories-slider-wrappper {
+      padding-left: 25px;
+    }
+
+    .stories-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 60px;
+      padding-bottom: 32px;
+    }
+
+    .stories-btn a {
+      all: unset;
+      background: var(--tupperware-blue-sky);
+      color: var(--tupperware-white);
+      min-width: auto;
+      cursor: pointer;
+      padding: 12px 24px;
+      border-radius: 27px;
+      font-family: var(--tupperware-noto-sans-kr);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-align: center;
+    }
+
+    .stories-btn a:first-child {
+      margin-right: 5px;
+    }
+
+    .special-stories-mobile-wrapper .swiper-horizontal > .swiper-pagination-bullets,
+    .special-stories-mobile-wrapper .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .special-stories-mobile-wrapper .swiper-pagination-custom,
+    .special-stories-mobile-wrapper .swiper-pagination-fraction {
+      bottom: 140px;
+    }
+  }
+</style>
+
+<div class="special-stories-wrapper desktop--tupperware ">
+  {{ section.settings.heading_desktop }}
+  <div class="stories--grid1">
+    <div class="d1">
+      <a href="{{ section.settings.img1_link }}"
+        ><img style="width:100%" src="{{ section.settings.img_1 | img_url: 'master' }}"
+      ></a>
+    </div>
+    <div class="d1">
+      <a href="{{ section.settings.img2_link }}"
+        ><img style="width:100%" src="{{ section.settings.img_2 | img_url: 'master' }}"
+      ></a>
+    </div>
+    <div class="d1">
+      <a href="{{ section.settings.img3_link }}"
+        ><img style="width:100%" src="{{ section.settings.img_3 | img_url: 'master' }}"
+      ></a>
+    </div>
+  </div>
+  <div class="stories--grid2">
+    <div class="d1"></div>
+    <div class="d1">
+      <a href="{{ section.settings.img4_link }}"
+        ><img style="width:100%" src="{{ section.settings.img_4 | img_url: 'master' }}"
+      ></a>
+    </div>
+    <div class="d1">
+      <a href="{{ section.settings.img5_link }}"
+        ><img style="width:100%" src="{{ section.settings.img_5 | img_url: 'master' }}"
+      ></a>
+    </div>
+    <div class="d1"></div>
+  </div>
+  <div class="stories-btn">
+    <a class="" href="{{ section.settings.btn1_link }}">{{ section.settings.btn1 }}</a>
+    <a class="" href="{{ section.settings.btn1_link }}">{{ section.settings.btn1 }}</a>
+  </div>
+</div>
+
+<div class="special-stories-mobile-wrapper mobile--tupperware ">
+  {{ section.settings.heading_mobile }}
+  <div class="stories-slider-wrappper">
+    <div class="stories-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="{{ section.settings.img1_link }}"
+            ><img style="width:100%" src="{{ section.settings.img_1 | img_url: 'master' }}"
+          ></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="{{ section.settings.img2_link }}"
+            ><img style="width:100%" src="{{ section.settings.img_2 | img_url: 'master' }}"
+          ></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="{{ section.settings.img3_link }}"
+            ><img style="width:100%" src="{{ section.settings.img_3 | img_url: 'master' }}"
+          ></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="{{ section.settings.img4_link }}"
+            ><img style="width:100%" src="{{ section.settings.img_4 | img_url: 'master' }}"
+          ></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="{{ section.settings.img5_link }}"
+            ><img style="width:100%" src="{{ section.settings.img_5 | img_url: 'master' }}"
+          ></a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="stories-btn">
+    <a class="" href="{{ section.settings.btn1_link }}">{{ section.settings.btn1 }}</a>
+    <a class="" href="{{ section.settings.btn1_link }}">{{ section.settings.btn1 }}</a>
+  </div>
+</div>
+
+<script>
+  var swiper = new Swiper('.stories-slider', {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3.2,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+{% schema %}
+{
+  "name": "TP Stories",
+  "tag": "section",
+  "class": "tp-special-stories",
+  "settings": [
+    {
+      "type": "html",
+      "id": "heading_desktop",
+      "label": "Heading Desktop HTML"
+    },
+    {
+      "type": "html",
+      "id": "heading_mobile",
+      "label": "Heading Mobile HTML"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "Image 1 link"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "url",
+      "id": "img2_link",
+      "label": "Image 2 link"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "url",
+      "id": "img3_link",
+      "label": "Image 3 link"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_4",
+      "label": "Image 4"
+    },
+    {
+      "type": "url",
+      "id": "img4_link",
+      "label": "Image 4 link"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_5",
+      "label": "Image 5"
+    },
+    {
+      "type": "url",
+      "id": "img5_link",
+      "label": "Image 5 link"
+    },
+    {
+      "type": "text",
+      "id": "btn1",
+      "label": "Button 1"
+    },
+    {
+      "type": "url",
+      "id": "btn1_link",
+      "label": "Button 1 link"
+    },
+    {
+      "type": "text",
+      "id": "btn2",
+      "label": "Button 2"
+    },
+    {
+      "type": "url",
+      "id": "btn2_link",
+      "label": "Button 2 link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "TP Stories"
+    }
+  ]
+}
+{% endschema %}

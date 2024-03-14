@@ -1,0 +1,189 @@
+<style>
+  .image-text-wrapper-tp {
+    width: 100%;
+    padding: 30px 150px;
+  }
+
+  .image-text-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+  }
+
+  .tp-textbox p {
+    margin: 0;
+  }
+
+  .tp-textbox-btn {
+    all: unset;
+    background: var(--tupperware-blue-sky);
+    color: var(--tupperware-white);
+    height: 47px;
+    min-width: 156px;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 27px;
+    font-family: var(--tupperware-noto-sans-kr);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-height: 47px;
+  }
+
+  .image-tp-section {
+    width: 100%;
+  }
+
+  .tp-textbox {
+    width: 60%;
+    padding: 70px;
+  }
+
+  .tp-image-wrapper {
+    width: 40%;
+  }
+
+  .tp-textbox .tp-textbox-heading {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .tp-textbox .tp-textbox-subheading {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .tp-textbox .tp-textbox-para {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 26px 0px;
+  }
+
+  @media (max-width: 990px) {
+    .image-text-wrapper-tp {
+      width: 100%;
+      padding: 0;
+    }
+
+    .image-text-flexbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 10px;
+      flex-direction: column;
+    }
+
+    .tp-image-wrapper {
+      width: 100%;
+    }
+
+    .tp-textbox {
+      width: 100%;
+      padding: 50px 25px;
+    }
+
+    .tp-textbox .tp-textbox-heading {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .tp-textbox .tp-textbox-subheading {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .tp-textbox .tp-textbox-para {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.8;
+    }
+  }
+</style>
+
+<div class="image-text-wrapper-tp">
+  <div class="image-text-flexbox">
+    <div class="tp-image-wrapper">
+      {% if section.settings.image_left != blank %}
+        <img
+          class="image-tp-section"
+          src="{{section.settings.image_left | img_url: 'master'}}"
+        >
+      {% else %}
+        {{ 'image' | placeholder_svg_tag }}
+      {% endif %}
+    </div>
+    <div class="tp-textbox">
+      <p class="tp-textbox-heading">{{ section.settings.heading }}</p>
+      <p class="tp-textbox-subheading">{{ section.settings.subheadig }}</p>
+      <p class="tp-textbox-para">{{ section.settings.para_text }}</p>
+      {% if section.settings.btn_text != blank %}
+        <a class="tp-textbox-btn " href="{{ section.settings.link }}">{{ section.settings.btn_text }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<script></script>
+
+{% schema %}
+{
+  "name": "TP Image and Text",
+  "tag": "section",
+  "class": "tp-image-text",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_left",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading Text"
+    },
+    {
+      "type": "text",
+      "id": "subheadig",
+      "label": "Subheadig Text"
+    },
+    {
+      "type": "html",
+      "id": "para_text",
+      "label": "Paragraph Text"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "TP Image and Text"
+    }
+  ]
+}
+{% endschema %}
