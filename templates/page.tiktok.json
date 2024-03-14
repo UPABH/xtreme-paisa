@@ -33,9 +33,10 @@
     "tp_left_image_text_6QUre3": {
       "type": "tp-left-image-text",
       "settings": {
-        "heading": "",
-        "subheadig": "",
-        "para_text": "",
+        "image_left": "shopify:\/\/shop_images\/g1.webp",
+        "heading": "TikTok Shop Trainer",
+        "subheadig": "4yrs exerience",
+        "para_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum has been the industry's standard dummy text ever since the 1500s, \nwhen an unknown printer.",
         "btn_text": "",
         "link": ""
       }
