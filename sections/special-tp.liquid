@@ -1,0 +1,275 @@
+<style>
+  .special-benefits-wrapper {
+    margin: 112px 40px;
+    padding: 90px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .special-benefits-wrapper p {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .special-benefits-wrapper span {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--tupperware-blue-sky);
+  }
+
+  .card--benefits {
+    margin-top: 80px;
+  }
+
+  .card-layout {
+    border-radius: 12px;
+    position: relative;
+  }
+
+  .card-overlay {
+    background: #1eb5dac7;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 12px;
+    max-height: 100%;
+    bottom: 0;
+    transition: max-height 0.5s ease-in;
+  }
+
+  .card-layout:hover .card-overlay {
+    max-height: 62px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .card-layout:hover .card-overlay .icon-overlay {
+    display: none;
+  }
+
+  .card-layout:hover .card-overlay .text-ovelay {
+    display: none;
+  }
+
+  .card-layout:hover .card-overlay .title-overlay {
+    margin: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .title-overlay {
+    margin-top: 48px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 56px;
+  }
+
+  .text-ovelay {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @media (max-width: 990px) {
+    .special-benefits-wrapper {
+      margin: 0;
+      padding: 0px;
+      background: transparent;
+      border-radius: 0;
+      text-align: center;
+      padding-top: 65px;
+      padding-left: 0px;
+      padding-bottom: 40px;
+    }
+
+    .special-benefits-wrapper p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0;
+    }
+
+    .special-benefits-wrapper span {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      color: var(--tupperware-blue-sky);
+    }
+
+    .card--benefits {
+      margin-top: 44px;
+    }
+
+    .card-layout {
+      border-radius: 12px;
+      position: relative;
+    }
+
+    .special-benefits-wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background: transparent;
+      border: 2px solid #1eb5da;
+    }
+
+    .special-benefits-wrapper .swiper-pagination-bullet {
+      background: #757575;
+      opacity: 1;
+    }
+
+    .icon-overlay,
+    .text-ovelay {
+      display: none;
+    }
+
+    .card-overlay {
+      max-height: 57px;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    .title-overlay {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .card-flexbox {
+      margin-left: 25px;
+      overflow: hidden;
+    }
+  }
+</style>
+<div class="special-benefits-wrapper">
+  <p>{{ section.settings.heading_text1 }}</p>
+  <p>
+    {{ section.settings.heading_text2 }}
+    <span>{{ section.settings.span_text }}</span>
+  </p>
+  <div class="card--benefits">
+    <div class="card-flexbox special-benefits-slider">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="card-layout swiper-slide">
+            <a href="{{ block.setting.card_link }}">
+              <img
+                class="card-img"
+                style="100%"
+                src="{{ block.settings.card_image | img_url: 'master' }}"
+              >
+              <div class="card-overlay">
+                <div class="icon-overlay">
+                  {{ block.settings.icon_svg }}
+                </div>
+                <div class="title-overlay">{{ block.settings.title_overlay }}</div>
+                <div class="text-ovelay">
+                  {{ block.settings.text_overlay }}
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var swiper = new Swiper('.special-benefits-slider', {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
+{% schema %}
+{
+  "name": "TP Special Benefits",
+  "tag": "section",
+  "class": "tp-special-benefits",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_text1",
+      "label": "Heading Text 1"
+    },
+    {
+      "type": "text",
+      "id": "heading_text2",
+      "label": "Heading Text 2"
+    },
+    {
+      "type": "text",
+      "id": "span_text",
+      "label": "Heading Span Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "limit": 3,
+      "name": "Add Benefit tile",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card Image"
+        },
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Icon SVG HTML"
+        },
+        {
+          "type": "text",
+          "id": "title_overlay",
+          "label": "Overlay Title"
+        },
+        {
+          "type": "html",
+          "id": "text_overlay",
+          "label": "Text Overlay HTML"
+        },
+        {
+          "type": "url",
+          "id": "card_link",
+          "label": "Card Link"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "TP Special Benefits"
+    }
+  ]
+}
+{% endschema %}
